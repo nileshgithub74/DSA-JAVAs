@@ -1,4 +1,3 @@
-package DyanamicProgramming;
 
 public class CoinChangeProblem {
   public static void main(String[] args) {
