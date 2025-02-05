@@ -1,30 +1,30 @@
-import java.util.ArrayDeque;
+// import java.util.ArrayDeque;
 
-public class ReverseItems {
+// public class ReverseItems {
 
-  public void reverseItems(list<Integer>  list)
-{
+//   public void reverseItems(list<Integer>  list)
+// {
 
-    ArrayDeque <Integer>  st  = new ArrayDeque<>();
+//     ArrayDeque <Integer>  st  = new ArrayDeque<>();
 
-    for(int  item : items){
-      st.push(item);
-    }
-
-
-    for(int i =0; i< .size(); i++){
-      st.set(i, st.pop());
-    }
+//     for(int  item : items){
+//       st.push(item);
+//     }
 
 
-  }
+//     for(int i =0; i< .size(); i++){
+//       st.set(i, st.pop());
+//     }
 
 
+//   }
 
 
 
-  public static void main(String[] args){
 
-  }
+
+//   public static void main(String[] args){
+
+//   }
   
-}
+// }
