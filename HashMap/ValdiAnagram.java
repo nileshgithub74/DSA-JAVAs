@@ -1,51 +1,51 @@
-package HashMap;
-import java.util.*;
+// package HashMap;
+// import java.util.*;
 
-public class ValdiAnagram {
+// public class ValdiAnagram {
 
-  static  HashMap<Character, Integer>  freqMap(String str){
+//   static  HashMap<Character, Integer>  freqMap(String str){
 
-    HashMap<Character,Integer>  mp = new HashMap<>();
+//     HashMap<Character,Integer>  mp = new HashMap<>();
 
-    for(int i=0; i< str.length(); i++){
-      Character ch  = str.charAt(i);
+//     for(int i=0; i< str.length(); i++){
+//       Character ch  = str.charAt(i);
 
-      if(!mp.containsKey(ch)){
-        mp.put(ch,1 );
-      }
-    else{
-      int currfreq = mp.get(ch);
-      mp.put(ch,currfreq+1 );
-    }
+//       if(!mp.containsKey(ch)){
+//         mp.put(ch,1 );
+//       }
+//     else{
+//       int currfreq = mp.get(ch);
+//       mp.put(ch,currfreq+1 );
+//     }
 
-    }
+//     }
     
 
 
 
 
-    return mp;
+//     return mp;
 
-  }
-
-
-
-
-
-
-  public static boolean  isAnagram(String s ,String t){
-
-    if(s.length() != t.length()) return false;
-
-    HashMap<Character, Integer> hm1 = freqMap(s);
-    HashMap<Character, Integer> hm2 = freqMap(t);
+//   }
 
 
 
 
 
 
-  }
+//   public static boolean  isAnagram(String s ,String t){
+
+//     if(s.length() != t.length()) return false;
+
+//     HashMap<Character, Integer> hm1 = freqMap(s);
+//     HashMap<Character, Integer> hm2 = freqMap(t);
+
+
+
+
+
+
+//   }
 
 
 
@@ -54,7 +54,7 @@ public class ValdiAnagram {
 
 
 
-  public static void main(String[] args){
+//   public static void main(String[] args){
   
 
 
@@ -64,6 +64,6 @@ public class ValdiAnagram {
 
 
 
-  }
+//   }
   
-}
+// }
