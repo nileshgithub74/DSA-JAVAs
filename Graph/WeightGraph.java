@@ -13,7 +13,7 @@ class Solution {
             adjList.get(edge[0]).add(new int[]{edge[1], edge[2]});
             adjList.get(edge[1]).add(new int[]{edge[0], edge[2]});
         }
-        
+          
         return adjList;
     }
 
@@ -22,7 +22,7 @@ class Solution {
         int[][] edges = {
             {0, 1, 2},
             {0, 4, 5},
-            {1, 2, 1},
+            {1, 2, 1}, 
             {1, 3, 3},
             {1, 4, 2},
             {2, 3, 4},
