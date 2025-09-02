@@ -19,7 +19,7 @@ public class LinkedListImplementation {
             System.out.print(curr.data + "-> ");
             curr = curr.next;
         }
-        System.out.println("null");
+        
     }
 
    
@@ -45,6 +45,26 @@ public class LinkedListImplementation {
         return newNode; 
     }
 
+    // insert at Given postion: --------------------
+
+    public static ListNode insertAtPosition(int data, int position, ListNode head){
+        ListNode newNode = new ListNode(data);
+        if(head == null || position == 1){
+            head = newNode;
+            return head;
+        }
+
+        ListNode curr = head;
+
+        for(int i =1; i < (position-1 )&& curr != null; i++){
+            curr = curr.next;
+        }
+
+        newNode.next = curr.next;
+        curr.next = newNode;
+        return head;
+    }
+
     public static void main(String[] args) {
         ListNode head = null; 
 
@@ -61,5 +81,11 @@ public class LinkedListImplementation {
 
         System.out.println("Reversed Linked List:");
         LinkedListTraversal(head);
+
+     head = insertAtPosition(99, 2, head); 
+
+            System.out.println("After inserting 99 at position 2:");
+        LinkedListTraversal(head);
+
     }
 }
