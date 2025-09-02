@@ -12,7 +12,7 @@ class ListNode {
 
 public class LinkedListImplementation {
 
-    // Traversal of the LinkedList
+   
     public static void LinkedListTraversal(ListNode head) {
         ListNode curr = head;
         while (curr != null) {
@@ -22,7 +22,7 @@ public class LinkedListImplementation {
         System.out.println("null");
     }
 
-    // Reverse  Linked List
+   
     public static ListNode ReverseLinkedList(ListNode head) {
         ListNode curr = head;
         ListNode prev = null;
@@ -35,7 +35,7 @@ public class LinkedListImplementation {
             curr = next;
         }
 
-        return prev; // new head
+        return prev; 
     }
 
     // Insert at Beginning
