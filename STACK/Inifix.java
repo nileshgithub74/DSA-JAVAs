@@ -50,7 +50,8 @@ public class Inifix {
 
 
                 }
-                op.pop();
+                op.pop();  // remove '(' from the op stack
+                
             }
             
             
