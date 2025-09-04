@@ -42,7 +42,7 @@ public class Inifix {
                 op.push(ch);
             }
             else if( ch==')'){
-                while( !op.isEmpty() && op.peek() == '('){
+                while( !op.isEmpty() && op.peek() != '('){
                      int v2 = val.pop();
                     int v1 = val.pop();
                     char operant = op.pop();
